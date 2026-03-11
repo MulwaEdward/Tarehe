@@ -1,1 +1,2 @@
 # Tarehe
+Tarehe is basicall a date and time management tracker and reminder, supporting SMEs in Kenya. Tarehe allows SMEs owners to update last date they engaged with the customer, then they're able to add next date to connect with the customer for business purposes. People targetted are Mama Fau, Mechanics, Salonists, Garage owners, Laundry shop owners, Retailers, Stockists etc.
