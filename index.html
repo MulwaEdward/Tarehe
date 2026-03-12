@@ -5,47 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarehe</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 <body>
-
     <!-- Navbar -->
     <nav class="flex justify-between bg-blue-500 text-white p-4">
-        <div class="text-4xl text-color-white-900 px-6 py-3 font-bold">Tarehe</div>
-        <div class="flex gap-4">
-            <a href class="hover:text-blue-300">Home</a>
-            <a href class="hover:text-blue-300">About</a>
-            <a href class="hover:text-blue-300">Contact</a>
+        <div class="text-4xl text-color-white-900 px-2 py-2 font-bold">Tarehe</div>
+        <div class="flex gap-9">
+            <a href="#home" class="hover:text-blue-300">Home</a>
+            <a href="#about" class="hover:text-blue-300">About</a>
+            <a href="#services" class="hover:text-blue-300">Services</a>
+            <a href="#contact" class="hover:text-blue-300">Contact</a>
         </div>
-        <button class="bg-green-900 px-4 py-2font-bold text-white-900 hover:bg-green-400 rounded">Sign in</button>
+        <button class="bg-green-900 px-2 py-2 font-bold text-white-900 hover:bg-green-400 rounded">Sign in</button>
     </nav>
-
     <!-- Home -->
-        <section id="home" class="flex text-center justify-cente bg-cover bg-center relative h-screen"
+        <section id="home" class="flex text-center py-10 px-40 justify-cente bg-cover bg-center relative h-screen"
         style="background-image: url(picha/3388267f75ba48ef5cd3637b62c20c80.jpg);">
 
-            <div class="flex z-10 gap-5">
+            <div class="absolute z-10 text-white px-75 py-15 mb-50 mt-5">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Welcome to Tarehe</h1>
+                <p class="text-lg md:text-xl max-w-2xl font-bold mb-4">Your ultimate date and time management tool.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Customer Anangoja Umpigie</h2>
 
-                <h1 class="text-3xl font-bold">Welcome to Tarehe</h1>
-                <p class="text-lg">Your ultimate date and time management tool.</p>
-                <h2 class="text-blue-500 font-bold">Customer Anangoja Umpigie!</h2>
-            </div>
-
-            <div class="flex gap-10 text-center justify-center px-50 py-10 mt-45 mb-90">
-                <button class="bg-yellow-500 font-bold text-white hover:bg-pink-700 rounded">DatePicker Calendar</button>
-                <button class="bg-green-500 font-bold text-white hover:bg-red-700 rounded">+ Add Customer List</button>
-                <button class="bg-blue-500 font-bold text-white hover:bg-purple-700 rounded">View Customer List</button>
+                <button class="bg-yellow-500 ml-10 px-2 py-5 font-bold hover:bg-pink-700 rounded-md">DatePicker Calendar</button>
+                <button class="bg-green-500 px-2 ml-10 py-5 font-bold hover:bg-red-700 rounded-md">+ Add Customer List</button>
+                <button class="bg-blue-500 px-2 py-5 ml-10 font-bold hover:bg-purple-700 rounded-md">View Customer List</button>
             </div>
 
         </section>
 
-                <footer class="text:bg-cover bg-blue-500 py-5">
-                    <h3 class="hover:bg-red-700">Contact: 07999999999</h3>
-                    <h4 class="hover:bg-green-500">Email: info@tarehe.co.ke </h4>
-                    <h5 class="hover:bg-purple-700 ">Facebook @Tarehe Twitter @Tarehe Tiktok @ Tarehe </h5>
+    <!-- About -->
+         <section id="about" class="px-10 py-7 mx-auto max-w-4xl">
+            <h3 class="text-3xl font-bold text-center mb-4">About Us</h3>
+            <p class="text-center max-w-3xl mx-auto text-color-white-600">Tarehe is basically a date and time management tracker and reminder, supporting SMEs in Kenya.</p>
+         </section>
 
-                </footer>
+    <!-- services -->
+       <section id="services" class="py-20 bg-blue-500 px-50">
+       <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
 
+       <div class="grid md:grid-cols-3 gap-19 max-w-6xl max-auto">
+             <div class="bg-green-400 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold mb-4">Day 17 Alerts</h3>
+                <p>"Customer anangoja umpigie!"  
+                    Mama Fua → John 17 days (KSh500)"  
+                     Fundi → Peter car ready (KSh2K)" 
+                    RED push notification → 1-tap WhatsApp</p>
+            </div>
+
+            <div class="bg-yellow-300 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold mb-4">Tap WhatsApp Calls</h3>
+                <p>"PIGA SIMU instantly" → Customer books  
+                   Salonist → "Grace haircut time?" (KSh800)  
+                   Carwash → "Boss gari ready" (KSh500)  
+                   47% repeat business increase</p>
+            </div>
+
+            <div class="bg-purple-700 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-semibold mb-4">Revenue Tracking</h3>
+                <p>"Track KSh lost → Get KSh back"  
+                    Dashboard: 47 customers × KSh800 avg = KSh37,600  
+                    Month 1: KSh150/mo → KSh39K earned back</p>
+            </div>
+            </div>
+       </div>
+       </section>
+
+       <!---Contact-->
+       <section id="contact" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your name" class="w-full p-3 boarder bg-blue-500 boarder-green-600 rounded-md">
+            <input type="text" placeholder="Email" class="w-full p-3 boarder bg-green-500 boarder-green-600 rounded-md">
+            <textarea placeholder="Your Message" rows="4" class="w-full p-3 boarder bg-gray-500 boarder-green-600 rounded-md"></textarea>
+            <button class="bg-green-700 px-2 py-2 font-bold text-white hover:bg-blue-400 rounded-md">Send Message</button>
+        </form>
+       </section>
+
+        <!---footer-->
+        <footer class="bg-blue-600 text-blue-300 text-white py-10 text-center">
+            <p>&copy; 2026 Tarehe. All rights reserved</p>
+        </footer>
 
 </body>
 </html>
